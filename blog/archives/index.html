@@ -1,24 +1,29 @@
-!!!
-%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
-  %head
-    %title ByteMuse - About
-    %meta(http-equiv='Content-Type' content='text/html' charset='utf-8')
-    %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
-    %link(rel='stylesheet' href='app.css' type='text/css')
-  %body
-    #container
-      %header
-        %h1
-          %a(href='/')ByteMuse
-          %small 
-            The Code and Musings of 
-            %a(href='http://twitter.com/chrispolis') @ChrisPolis
-        %nav
-          %a(href='/') Posts
-          %a(href='/projects') Projects
-          %a(href='/about') About
-          %a(href='/contact') Contact
-      #content
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>ByteMuse - About</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/app.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='container'>
+      <header>
+        <h1>
+          <a href='/'>ByteMuse</a>
+          <small>
+            The Code and Musings of
+            <a href='http://twitter.com/chrispolis'>@ChrisPolis</a>
+          </small>
+        </h1>
+        <nav>
+          <a href='/'>Posts</a>
+          <a href='/projects.html'>Projects</a>
+          <a href='/about.html'>About</a>
+          <a href='/contact.html'>Contact</a>
+        </nav>
+      </header>
+      <div id='content'>
         <div>
 <article role="article">
   
@@ -54,8 +59,15 @@
 </aside>
 
 
-      %footer
-        %p 
+      </div>
+      <footer>
+        <p>
           Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content created by Chris Polis
-        %p
+        </p>
+        <p>
           © Chris Polis 2013
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
