@@ -1,14 +1,39 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-{% include head.html %}
-<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  <header role="banner">{% include header.html %}</header>
-  <nav role="navigation">{% include navigation.html %}</nav>
-  <div id="main">
-    <div id="content">
-      {{ content | expand_urls: root_url }}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>ByteMuse - About</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/app.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='container'>
+      <header>
+        <h1>
+          <a href='/'>ByteMuse</a>
+          <small>
+            The Code and Musings of
+            <a href='http://twitter.com/chrispolis'>@ChrisPolis</a>
+          </small>
+        </h1>
+        <nav>
+          <a href='/'>Posts</a>
+          <a href='/projects.html'>Projects</a>
+          <a href='/about.html'>About</a>
+          <a href='/contact.html'>Contact</a>
+        </nav>
+      </header>
+      <div id='content'>
+        {{ content | expand_urls: root_url }}
+      </div>
+      <footer>
+        <p>
+          Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content created by Chris Polis
+        </p>
+        <p>
+          © Chris Polis 2013
+        </p>
+      </footer>
     </div>
-  </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
-  {% include after_footer.html %}
-</body>
+  </body>
 </html>
