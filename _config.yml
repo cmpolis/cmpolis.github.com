@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://cmpolis.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: ByteMuse
+subtitle: Code and Musings of @ChrisPolis
+author: Chris Polis
 simple_search: http://google.com/search
-description:
+description: The technical and personal blog, portfolio and bio site of Chris Polis.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -93,7 +93,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-23674172-1
 
 # Facebook Like
 facebook_like: false
