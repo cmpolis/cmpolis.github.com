@@ -4,7 +4,7 @@
   <title><![CDATA[ByteMuse]]></title>
   <link href="http://cmpolis.github.com/atom.xml" rel="self"/>
   <link href="http://cmpolis.github.com/"/>
-  <updated>2012-12-30T20:54:58-08:00</updated>
+  <updated>2012-12-31T15:32:06-08:00</updated>
   <id>http://cmpolis.github.com/</id>
   <author>
     <name><![CDATA[Chris Polis]]></name>
@@ -12,5 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Obligatory First Post]]></title>
+    <link href="http://cmpolis.github.compost/obligatory-first-post/"/>
+    <updated>2012-12-30T22:09:00-08:00</updated>
+    <id>http://cmpolis.github.compost/obligatory-first-post</id>
+    <content type="html"><![CDATA[<p>After a hiatus of about a year, I&#8217;ve decided to blog again! I&#8217;m not one for making resolutions, but in 2013 and beyond, I plan to write more and do more open source coding. I blogged previously on ByteMuse.com and had a handful of posts, but I&#8217;m hoping to start posting more regularly.</p>
+
+<p>Some topics that I want to cover are:</p>
+
+<ul>
+<li>Open Source</li>
+<li>Web Development</li>
+<li>Mobile Development</li>
+<li>Databases</li>
+<li>Travel</li>
+<li>Books, Music, Movies</li>
+</ul>
+
+
+<h3>Old Posts</h3>
+
+<p>I&#8217;ve decided not to migrate my old posts for various reasons. Many of these posts are complemented with code that is still available on my <a href="http://github.com/cmpolis">GitHub Account</a>.</p>
+
+<h3>Setup</h3>
+
+<p><em>If you&#8217;re into web development, you might find this interesting&#8230;</em></p>
+
+<p>I previously ran my blog with WordPress and hated it: the templating and plugin system are really heavy, it favors editing and customization through UI instead of code&#8230; and it&#8217;s written in PHP.</p>
+
+<p>My new blog is powered by <a href="http://octopress.org">Octopress</a> and so far it has been great! Octopress is a ruby based static site generator that uses a simple templating system. I am using markdown for blog posts, HAML and HTML for static pages and SASS for styling. For comments, I am using Disqus since it can be added with a simple embed.</p>
+
+<p>To deploy, I simply run a rake command to generate my site as static content and assets, then push it to GitHub. I don&#8217;t have to worry about databases, bandwidth or management. Easy.</p>
+]]></content>
+  </entry>
   
 </feed>
