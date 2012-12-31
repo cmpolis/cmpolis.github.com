@@ -12,7 +12,7 @@ body
     font-family: 'Droid Sans', sans-serif
 
 #container
-  width: 960px
+  max-width: 960px
   margin: 40px auto 0px auto
 
 header
@@ -58,6 +58,7 @@ footer
   vertical-align: top
 
 #profile
+  min-width: 300px
   width: 33%
   margin-right: 5px
   img
@@ -65,15 +66,17 @@ footer
     float: left
     margin-right: 10px
 #skills
+  min-width: 300px
   width: 33%
   margin-right: 5px
   margin-left: 5px
 #elsewhere
+  min-width: 250px
   width: 28%
-  margin-left: 5px
+  margin-left: 10px
   background: #F3F3F3
-  float: right
-  padding-left: 10px
+  padding-left: 15px
+  padding-right: 8px
   margin-top: 18px
   margin-bottom: 18px
   ul
@@ -126,4 +129,24 @@ footer
     font-weight: normal
     font-size: 18px
     color: #888
-  
+
+.project
+  .preview
+    display: inline-block
+    width: 38%
+  .meta
+    display: inline-block
+    width: 60%
+
+#projects
+  h2
+    margin-left: 32px
+    margin-bottom: 8px
+  li
+    list-style: none
+    font-size: 18px
+    margin-bottom: 6px
+    .sublink
+      a
+        font-size: 90%
+        font-style: italic

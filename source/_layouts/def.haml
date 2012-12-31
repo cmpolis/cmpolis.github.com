@@ -1,7 +1,11 @@
 !!!
 %html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
   %head
-    %title ByteMuse - About
+    %title 
+      ByteMuse
+      {% if page.title %}
+      \- {{ page.title }}
+      {% endif %}
     %meta(http-equiv='Content-Type' content='text/html' charset='utf-8')
     %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
     %link(rel='stylesheet' href='/stylesheets/app.css' type='text/css')
@@ -22,9 +26,7 @@
         {{ content | expand_urls: root_url }}
       %footer
         %p 
-          Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content created by Chris Polis
-        %p
-          ©Chris Polis 2013
+          Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content by Chris Polis © 2012
     %script(type="text/javascript")
 
       var _gaq = _gaq || [];
