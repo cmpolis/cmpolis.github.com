@@ -14,6 +14,16 @@ body
 #container
   max-width: 960px
   margin: 40px auto 0px auto
+  //@media (max-device-width: 800px)
+  //  width: 790px
+  //@media (max-device-width: 768px)
+  //  width: 758px 
+  //@media (max-device-width: 640px)
+  //  width: 630px
+  //@media (max-device-width: 480px)
+  //  width: 470px
+  //@media (max-device-width: 320px)
+  //  width: 310px
 
 header
   border-bottom: 1px solid #DDD
@@ -51,6 +61,10 @@ footer
 .ib
   font-style: italic
   font-weight: bold
+
+#content
+  max-width: 720px
+  margin: auto
 
 #profile, #skills, #elsewhere
   font-size: 16px
@@ -117,8 +131,13 @@ footer
 .post-content
   font-size: 18px
 .post-comments
+  margin-top: 20px
   border-top: 1px solid #DDD
   padding-bottom: 5px
+  #dsq-footer
+    display: none
+  .dsq-trackback-url
+    display: none
 
 .teaser-title
   font-size: 32px

@@ -6,9 +6,7 @@ no-title: true
   {% assign index = true %}
   {% for post in paginator.posts %}
   <h2 class='teaser-title'>
-    <a href='{{ post.url }}'>
-      {{ post.title }}
-    </a>
+    <a href="{{ post.url }}">{{ post.title }}</a>
     <small class='teaser-time'>
       {% include post/date.html %}{{ time }}
     </small>
