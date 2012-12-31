@@ -4,7 +4,7 @@
   <title><![CDATA[ByteMuse]]></title>
   <link href="http://cmpolis.github.com/atom.xml" rel="self"/>
   <link href="http://cmpolis.github.com/"/>
-  <updated>2012-12-23T00:23:48-08:00</updated>
+  <updated>2012-12-30T20:54:58-08:00</updated>
   <id>http://cmpolis.github.com/</id>
   <author>
     <name><![CDATA[Chris Polis]]></name>
@@ -12,17 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Obligatory (second) First Post]]></title>
-    <link href="http://cmpolis.github.compost/obligatory-second-first-post/"/>
-    <updated>2012-12-21T00:58:00-08:00</updated>
-    <id>http://cmpolis.github.compost/obligatory-second-first-post</id>
-    <content type="html"><![CDATA[<h1>This is my first post</h1>
-
-<p>Herp derp foobar
-<em>woot woot</em></p>
-]]></content>
-  </entry>
   
 </feed>
