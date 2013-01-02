@@ -19,6 +19,7 @@ body
   //@media (max-device-width: 768px)
   //  width: 758px 
   //@media (max-device-width: 640px)
+    background-color: red
   //  width: 630px
   //@media (max-device-width: 480px)
   //  width: 470px
@@ -128,8 +129,10 @@ article.hentry
 .post-time, .teaser-time
   font-size: 18px
   color: #888
+  padding-left: 3px
 .post-content
   font-size: 18px
+  padding-left: 3px
 .post-comments
   margin-top: 20px
   border-top: 1px solid #DDD
@@ -169,3 +172,29 @@ article.hentry
       a
         font-size: 90%
         font-style: italic
+
+.embed-header
+  display: none
+
+svg
+  font-size: 12px
+  font-family: sans-serif
+
+.color-label
+  list-style: none
+  display: inline
+  margin-right: 35px
+
+.axis path, .axis line
+  fill: none
+  stroke: #000
+  shape-rendering:crispEdges
+
+.x.axis path
+  display: none
+
+.line
+  fill: none
+  stroke: steelblue
+  stroke-width: 2px
+  stroke-opacity: .15
