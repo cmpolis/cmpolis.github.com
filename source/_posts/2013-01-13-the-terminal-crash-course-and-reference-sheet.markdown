@@ -133,10 +133,10 @@ Complicating Things...
     $ cd ~/D 
 
 #### Combining terminal commands 
-`[command one] && [command two]` Pipe: Run command one, then run command two<br />
+`[command one] && [command two]` Run command one, then run command two<br />
 *ex: `mkdir newDir && cd newDir` to make a directory and navigate into it*
 
-`[command one] | [command two]` Use the output from command one as input for command two<br />
+`[command one] | [command two]` Pipe: Use the output from command one as input for command two<br />
 *ex: `history | grep git` to search history for when git commands were run*
 
 #### Redirection
