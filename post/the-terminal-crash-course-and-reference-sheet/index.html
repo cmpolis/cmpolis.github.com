@@ -170,7 +170,7 @@ $ diff a b
 
 <p><code>ctrl+c</code> Attempts to shutdown the process that is running in the terminal (sends a SIGINT)</p>
 
-<p><code>ctrl+z</code> Kills the process that is running in the terminal, similar to <code>ctrl+c</code>, but more intrusive and will always work(sends a SIGSTOP)</p>
+<p><code>ctrl+z</code> Brings the process that is running in the terminal to the background(sends a SIGSTOP), can be brought back to foreground with <code>fg</code></p>
 
 <p><code>tab</code> Autocompletes a file or command name in the terminal. Will only fully autocomplete if there is one option or will complete partially if all possibilities share part of their name. <br />
 <em>ex: <code>$ cd ~/Down [hit tab]</code> -> <code>$ cd/Downloads</code></em></p>
