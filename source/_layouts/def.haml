@@ -9,6 +9,17 @@
     %meta(http-equiv='Content-Type' content='text/html' charset='utf-8')
     %link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
     %link(rel='stylesheet' href='/stylesheets/app.css' type='text/css')
+    %script(type="text/javascript")
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23674172-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
   %body
     #container
       %header
@@ -27,14 +38,3 @@
       %footer
         %p 
           Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content by Chris Polis © 2012
-    %script(type="text/javascript")
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-23674172-1']);
-      _gaq.push(['_trackPageview']);
-    
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
