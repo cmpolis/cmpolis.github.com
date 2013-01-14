@@ -120,7 +120,7 @@ Complicating Things...
 
 `ctrl+c` Attempts to shutdown the process that is running in the terminal (sends a SIGINT)
 
-`ctrl+z` Kills the process that is running in the terminal, similar to `ctrl+c`, but more intrusive and will always work(sends a SIGSTOP)
+`ctrl+z` Brings the process that is running in the terminal to the background(sends a SIGSTOP), can be brought back to foreground with `fg` 
 
 `tab` Autocompletes a file or command name in the terminal. Will only fully autocomplete if there is one option or will complete partially if all possibilities share part of their name. <br />
 *ex: `$ cd ~/Down [hit tab]` -> `$ cd/Downloads`* 
