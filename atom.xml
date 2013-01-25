@@ -4,7 +4,7 @@
   <title><![CDATA[ByteMuse]]></title>
   <link href="http://cmpolis.github.com/atom.xml" rel="self"/>
   <link href="http://cmpolis.github.com/"/>
-  <updated>2013-01-13T22:46:16-08:00</updated>
+  <updated>2013-01-24T21:19:12-08:00</updated>
   <id>http://cmpolis.github.com/</id>
   <author>
     <name><![CDATA[Chris Polis]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using a 1D Array as a 2D Array in C]]></title>
+    <link href="http://cmpolis.github.compost/using-a-1d-array-as-a-2d-array-in-c/"/>
+    <updated>2013-01-24T18:21:00-08:00</updated>
+    <id>http://cmpolis.github.compost/using-a-1d-array-as-a-2d-array-in-c</id>
+    <content type="html"><![CDATA[<p>Lately, I&#8217;ve been writing a lot of C code and using large multidimensional arrays. I&#8217;ve found that using a simple macro to map a 1D array to a 2(or more)D array has simplified my code and may make my code marginally faster.</p>
+
+<h3>Macro:</h3>
+
+<pre><code>#define DATA(r, c) (data[(r)*width + (c)])
+</code></pre>
+
+<h3>Accessing the array:</h3>
+
+<pre><code>DATA(rowNdx, colNdx) = x;
+</code></pre>
+
+<h3>Why</h3>
+
+<ul>
+<li>Only need to <code>malloc</code> and <code>free</code> once(<code>malloc(sizeof(char) * width * height)</code> instead of <code>malloc</code>ing for each row of the array</li>
+<li>Since the preprocessor handles the macro, there isn&#8217;t any extra overhead of function calls</li>
+<li>Array access is terse and it&#8217;s very clear what is going on - instead of <code>arr[x][y]</code>, you have <code>arr(x,y)</code></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Terminal Crash Course and Reference Sheet]]></title>
