@@ -9,7 +9,7 @@
 #define DATA(r, c) (data[(r)*1000 + (c)])
 
 int main(int argc, char *argv[]) {
-  //int *data = (int *)malloc(sizeof(int) * WIDTH * HEIGHT);
+  int *data = (int *)malloc(sizeof(int) * WIDTH * HEIGHT);
   int colNdx, rowNdx;
 
   for(rowNdx = 0; rowNdx < HEIGHT; rowNdx++)
