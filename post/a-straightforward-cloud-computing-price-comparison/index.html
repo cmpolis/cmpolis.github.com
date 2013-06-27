@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      ByteMuse
+      
+      - A Straightforward Cloud Computing Price Comparison
+      
+    </title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/app.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript'>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23674172-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id='container'>
+      <header>
+        <h1>
+          <a href='/'>ByteMuse</a>
+          <small>
+            The Code and Musings of
+            <a href='http://twitter.com/chrispolis'>@ChrisPolis</a>
+          </small>
+        </h1>
+        <nav>
+          <a href='/'>Posts</a>
+          <a href='/projects.html'>Projects</a>
+          <a href='/about.html'>About</a>
+          <a href='/contact.html'>Contact</a>
+        </nav>
+      </header>
+      <div id='content'>
+        <a href='https://plus.google.com/117393114751838266156' rel='author'></a>
+<article class='hentry' role='article'>
+  <h1 class='entry-title post-title'>
+    A Straightforward Cloud Computing Price Comparison
+  </h1>
+  <span class='date updated post-time'>
+    
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-26T23:21:00-07:00" pubdate data-updated="true">Jun 26<span>th</span>, 2013</time>
+  </span>
+  <span class='spacer'>
+    -
+  </span>
+  <span class='post-author vcard author'>
+    <span class='fn'>Chris Polis</span>
+  </span>
+  <div class='entry-content post-content'>
+    <p><em>tl;dr: I made a sortable and filterable table of different cloud computing plans that adds transparency for comparing different plans and providers. <a href="http://CloudPriceGrid.com" title="Cloud Price Grid">Available here.</a></em></p>
+
+<p>There are a plethora of cloud hosting providers out there these days. For most of my recent projects, I have gone with Amazon EC2 without considering other solutions. However, there are two newer services that I have been wanting to try out - Digital Ocean and Google Compute Engine.</p>
+
+<p>I recently read about Digital Ocean and am enticed by their low prices as well as their advertised speed and ease of deployment. Google has recently launched their Compute Engine service, which directly competes with Amazon&#8217;s EC2.</p>
+
+<p>After a bit of digging, I found there was no single place where I could compare all these services. Also, some providers<em>(eg. Amazon)</em> do not have a transparent pricing grid that covers their plans. What I wanted (and built) was a spreadsheet with all the plans from a few providers that contained basic plan information and could be sorted and filtered.</p>
+
+<p>Unfortunately, a lot of plan metrics are either subjective or cannot be collected without benchmarking; cpu power, connectivity and stability could not be put on the grid. However, RAM, storage and price are fairly objective and given by each provider. Computing power for each plan is listed, but it is hard to compare between providers. I included an aggregate column of RAM per $ per month to give an indication of relative pricing.</p>
+
+<p>Some quick observations:</p>
+
+<ul>
+<li>Amazon and Google have VERY comparable pricing.</li>
+<li>Joyent seems to be the least value (in terms of RAM/$/Month - maybe they have a value prop in another way)</li>
+<li>Digital Ocean has the best value (in terms of RAM/$/Month)</li>
+</ul>
+
+
+<h3>Here it is: <a href="http://CloudPriceGrid.com" title="Cloud Price Grid">CloudPriceGrid.com</a></h3>
+
+  </div>
+  <div class='post-comments'>
+    <!-- %a(href="https://twitter.com/share" class="twitter-share-button" data-via="ChrisPolis")Tweet -->
+    <!-- %script -->
+    <!-- !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); -->
+    <!-- %script(type="text/javascript") -->
+    <!-- var likeIt = '<iframe src="http://www.facebook.com/plugins/like.php?href='+document.URL+'" scrolling="no" layout="button_count" frameborder="0" style="border:none; width:450px; height:24px;"></iframe>'; -->
+    <!-- document.write(likeIt); -->
+    <!-- %iframe(src="//www.facebook.com/plugins/like.php?href="+window.URL+"&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=403919139668608" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true") -->
+    <div id='disqus_thread'></div>
+    <script type='text/javascript'>
+      <!-- * * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */ -->
+      var disqus_shortname = 'bytemuse'; // required: replace example with your forum shortname
+      <!-- * * * DON'T EDIT BELOW THIS LINE * * */ -->
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+    </noscript>
+  </div>
+</article>
+
+      </div>
+      <footer>
+        <p>
+          Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content by Chris Polis © 2012
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

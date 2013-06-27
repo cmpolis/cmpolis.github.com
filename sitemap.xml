@@ -21,23 +21,29 @@
         <lastmod>2013-02-08T16:26:13-08:00</lastmod>
     </url>
     <url>
-        <loc>http://cmpolis.github.com/projects.html</loc>
+        <loc>
+            http://cmpolis.github.compost/a-straightforward-cloud-computing-price-comparison/
+        </loc>
+        <lastmod>2013-06-27T00:17:02-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cmpolis.github.com/about.html</loc>
         <lastmod>2013-01-13T22:46:01-08:00</lastmod>
     </url>
     <url>
-        <loc>http://cmpolis.github.com/</loc>
-        <lastmod>2013-02-08T16:26:13-08:00</lastmod>
-    </url>
-    <url>
         <loc>http://cmpolis.github.com/blog/archives/</loc>
-        <lastmod>2013-02-08T16:26:13-08:00</lastmod>
+        <lastmod>2013-06-27T00:17:02-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.com/contact.html</loc>
         <lastmod>2013-01-13T22:46:01-08:00</lastmod>
     </url>
     <url>
-        <loc>http://cmpolis.github.com/about.html</loc>
+        <loc>http://cmpolis.github.com/</loc>
+        <lastmod>2013-06-27T00:17:02-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cmpolis.github.com/projects.html</loc>
         <lastmod>2013-01-13T22:46:01-08:00</lastmod>
     </url>
 </urlset>
