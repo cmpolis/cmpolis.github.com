@@ -2,14 +2,21 @@
 layout: default
 single: true
 ---
+<a href='https://plus.google.com/117393114751838266156' rel='author'></a>
 <article class='hentry' role='article'>
-  <h1 class='post-title'>
+  <h1 class='entry-title post-title'>
     {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
   </h1>
-  <span class='post-time'>
+  <span class='date updated post-time'>
     {% include post/date.html %}{{ time }}
   </span>
-  <div class='post-content'>
+  <span class='spacer'>
+    -
+  </span>
+  <span class='post-author vcard author'>
+    <span class='fn'>Chris Polis</span>
+  </span>
+  <div class='entry-content post-content'>
     {{ content }}
   </div>
   <div class='post-comments'>

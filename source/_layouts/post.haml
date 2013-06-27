@@ -2,13 +2,18 @@
 layout: default
 single: true
 \---
+%a(rel='author' href='https://plus.google.com/117393114751838266156')
 %article.hentry(role='article')
-  %h1.post-title
+  %h1.entry-title.post-title
     \{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
-  %span.post-time
+  %span.date.updated.post-time
     \{% include post/date.html %}{{ time }}
+  %span.spacer
+    \-
+  %span.post-author.vcard.author
+    %span.fn Chris Polis
 
-  .post-content
+  .entry-content.post-content
     \{{ content }}
 
   .post-comments
