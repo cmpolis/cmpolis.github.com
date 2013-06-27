@@ -1,0 +1,14 @@
+\---
+layout: default
+no-title: true
+\---
+.blog-index
+  \{% assign index = true %}
+  \{% for post in paginator.posts %}
+
+  %h2.teaser-title
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    %small.teaser-time  
+      {% include post/date.html %}{{ time }}
+
+  \{% endfor %}

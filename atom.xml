@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[ByteMuse]]></title>
+  <link href="http://cmpolis.github.com/atom.xml" rel="self"/>
+  <link href="http://cmpolis.github.com/"/>
+  <updated>2013-02-08T16:28:25-08:00</updated>
+  <id>http://cmpolis.github.com/</id>
+  <author>
+    <name><![CDATA[Chris Polis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[3 Days with a 3D Printer]]></title>
+    <link href="http://cmpolis.github.compost/3-days-with-a-3d-printer/"/>
+    <updated>2013-02-02T18:54:00-08:00</updated>
+    <id>http://cmpolis.github.compost/3-days-with-a-3d-printer</id>
+    <content type="html"><![CDATA[<p><em>tl;dr: This is a fairly long and detailed post. For my first impressions on 3D printing after a few days with a printer, scroll down to the bottom of this article.</em></p>
+
+<h3>Intro</h3>
+
+<p>I first learned about 3D printing a few years and found it really interesting and contemplated building a <a href="http://www.reprap.org/">RepRap</a>, but never got around to it. Although, I still had been itching to start 3D printing. In November, I finally caved and ordered my first 3D printer and received it a few days ago. Some things that led me to getting my printer were: it seemed like hobbyist printer technology had improved significantly; a lot more options became available; I met someone with a RepRap last summer; some of my peers in college are using commercial quality 3D printers for projects.</p>
+
+<p>I thought it would be helpful to share my thoughts and experience on picking a printer, actually printing and what I have learned so far. Clearly, I&#8217;m a novice, so take this article with a grain of salt.</p>
+
+<h2>How I chose my printer, the MakerGear M2</h2>
+
+<p>There are a plethora of different hobbyist 3D printers out now. Here are some decent lists of options: <a href="http://edutechwiki.unige.ch/en/3D_printing#Cheap_3D_open_source_printers_or_kits">list of cheap 3d printers</a>, <a href="http://www.additive3d.com/3dpr_cht.htm">list of printers below $20,000</a>. Also, Make Magazine recently put out a nice and thorough comparison of a bunch of hobbyist printers - this is probably the best 3D printer comparison at the moment: <a href="http://blog.makezine.com/volume/make-ultimate-guide-to-3d-printing/">here</a>. A lot of opinions on different 3D printers can be read on the <a href="http://forums.reprap.org/">RepRap forums</a>, <a href="http://reddit.com/r/3dprinting">3D Printing Subreddit</a>, <a href="https://groups.google.com/forum/?fromgroups#!forum/makerbot">MakerBot Google Group</a> and on other forums and blogs.</p>
+
+<p>My main criteria for picking a printer were:</p>
+
+<ul>
+<li><strong>Easy to assemble or assembled:</strong> Although I think I&#8217;m fairly handy and enjoy building things, I didn&#8217;t want any extra headaches that might come with a difficult build.</li>
+<li><strong>Ability to print with ABS and PLA:</strong> Some printers can only print PLA - ABS requires a heated bed to prevent warping. ABS as compared to PLA is a bit stronger, more heat resistant and less brittle.</li>
+<li><strong>Accuracy/Print Quality:</strong> I want nice looking prints. This criteria was fairly hard to measure between printers - I mostly just looked at pictures of prints that people had posted. Some printers have minimum layer height or x/y accuracy in their tech specs, which can give a little insight to print quality.</li>
+<li><strong>Speed:</strong> 3D Printing can be slow - taking hours to do prints.</li>
+<li><strong>Build size:</strong> 3D Printers can build varying size objects - the range for hobbyist printers seems to be from about a 5&#8221; cube to 10&#8221; cube. I don&#8217;t anticipate building anything really big, but it&#8217;s nice to have the ability.</li>
+<li><strong>Brand/Support:</strong> Most 3D printer companies seem to be in their infancy and not well established. A 3D printer is a decent investment and I wanted to order from a company that will likely be around in a few years and can provide good support for if and when things go wrong. I would be wary of Kickstarter projects and really new companies: <a href="http://www.wired.com/design/2012/10/pandabot-cancelled/">things can go wrong</a></li>
+</ul>
+
+
+<p>After countless hours of research, I narrowed my list down to the following printers:</p>
+
+<ul>
+<li><strong>MakerBot Replicator 2:</strong> MakerBot is probably the most well known hobbyist 3D printer manufacturer. The Replicator 2 looks like a well built machine and I have seen pictures of nice looking prints from it. The print quality and ease of this printer seem to be higher than with other printers. This printer is one of the more expensive hobbyist printers. Other things that turned me away from this printer are that it prints PLA only and is closed source. <em>As an aside, MakerBot used to be a bit of a darling in the community and built printers based on RepRap designs, but now it seems they&#8217;ve gotten a fair amount of criticism for making their latest printer closed source.</em></li>
+<li><strong>Afinia H-Series:</strong> This one was pretty high on my list - their website boasts about the ease of use and &#8216;Out of the Box&#8217; capability of this printer. This printer was highly rated in the Make Magazine guide(Make also sells this printer on their site - <em>conflict of interest?</em>). The downsides that I see in this printer are it&#8217;s small print volume(~5&#8221; cube) and it seems relatively slow.</li>
+<li><strong>Ultimaker:</strong> This printer is a good contrast to the Afinia: it has a larger print volume(~8&#8221; cube), is fast, but comes as a kit.</li>
+<li><strong>Type A Machines Series 1:</strong> If I were only printing in PLA, this is the machine I would pick. It has a 9&#8221; cube build volume, seems well built, fast and seems to produce good prints. They are a fairly new company and are based in San Francisco, which is a plus for me. I contacted the team regarding their printer and they were extremely helpful and nice.</li>
+</ul>
+
+
+<p>Ultimately, I settled on the <strong>MakerGear M2</strong>. The things that I liked about this printer are that it is built upon a solid metal frame, instead of plywood which most other printers use. To me, it seems like that would help with vibration dampening and stability. The other components in the M2 appear to be high quality and the design, well thought out. MakerGear has been around for a while selling RepRap kits and parts and they have a fairly active Google group and IRC channel. The M2 prints relatively fast, has a good size build area(8&#8221; x 10&#8221; x 8&#8221;) and has a heated bed. It was priced below the Replicator2 and the same as the Afinia and Series 1 when I ordered it, $1,500 for an assembled machine.</p>
+
+<h2>Unboxing and setup</h2>
+
+<p>A few days ago, after months of anticipation<em>(I ordered my printer early in November and received it on the last day in January.)</em>, my printer finally arrived. Like a kid on Christmas morning, I was delighted and immediately grabbed my printer out of a sea of packing peanuts. It was packaged really securely - foam blocks and zip ties kept all the important components in place; it seemed really unlikely that something may have been damaged in transit.</p>
+
+<p><img src="http://bytemuse.com/images/package.jpg" width="400"></p>
+
+<p>My package also included a bunch of tools, spare parts, 1kg of black PLA, some test prints that presumably came off of my printer, lubricant, a piece of chocolate<em>- really nice touch!</em>, kapton tape<em>(although, I had previously ordered this, not knowing it was included)</em>, an SD card in the printer and other miscellaneous items for my printer. The documentation was pretty light: one page with basic instructions on how to print PLA and ABS - temperatures, to tape the bed or not, warnings, etc&#8230; Also included were engineering diagrams of the printer.</p>
+
+<p><img src="http://bytemuse.com/images/m2.jpg" width="400"></p>
+
+<p>To actually get the printer setup, all I had to do was put the filament spool on its holder, remove the packaging and plug in power and my computer via USB.</p>
+
+<h2>First print</h2>
+
+<p>The M2 comes with an SD card loaded with a few gcode<em>(more on this in the next section)</em> files to print. I decided to print the one which I thought would be the quickest - a bracelet with MakerGear. I heated the bed to 60° and the extruder to 185°, per MakerGear&#8217;s instructions and started the print using Pronterface.</p>
+
+<p>Less than 10 minutes later, I grabbed this off the bed:
+<img src="http://bytemuse.com/images/bracelet.jpg" width="400"></p>
+
+<p>WOOT!</p>
+
+<p>I thought it turned out really well - the surfaces are fairly straight, the text is easy to read and there are only a few tiny blemishes.</p>
+
+<h2>Software</h2>
+
+<p>The 3D printing and open source community have done a great job in creating software for 3D printing, <strong>thank you!!</strong> I&#8217;m using Linux(Ubuntu 11.04) and here are the software tools that I have been using for 3D printing, all of which are free:<br />
+<strong><a href="https://github.com/kliment/Printrun">Pronterface</a>:</strong> to interact with the printer - you can start and pause prints, trigger the motors, turn off fans, set temperatures and send other signals to operate your printer.<br />
+<strong><a href="https://github.com/alexrj/Slic3r">Slic3r</a></strong> to turn 3d models(STL files) into instructions for the printer to execute(gcode), <em>slicing</em>. There are a lot of print and printer settings that need to be set in Slic3r and these will determine the quality of your print. There is a configuration file for the M2 on the MakerGear website that I found to work well. Print settings include infill density and pattern, speed, layer height and others.<br />
+<strong><a href="http://meshlab.sourceforge.net/">Meshlab</a></strong> to view 3D models and convert between model file formats<br />
+<strong><a href="http://www.netfabb.com/">Netfabb/Cloudfabb</a></strong> to repair STL files for printing - sometimes models have holes or need other fixes before being sliced<br />
+<strong><a href="http://tinkercad.com">Tinkercad</a></strong> to do some really basic 3D modeling or modify 3D models<br /></p>
+
+<h2>More Prints</h2>
+
+<p>Some other things that I have printed are: a bunch of &#8216;calibration cubes&#8217; with different temperatures and other settings and an iPhone case. I love the case because it is both utilitarian and shows how 3D printing is great for customization:</p>
+
+<p><img src="http://bytemuse.com/images/case.jpg" width="400"></p>
+
+<p>Action shot:</p>
+
+<p><img src="http://bytemuse.com/images/action.jpg" width="400"></p>
+
+<p>Infill detail from a simple cube, I had difficulty focusing my camera(phone), since it was so close to the object:</p>
+
+<p><img src="http://bytemuse.com/images/cube.jpg" width="400"></p>
+
+<h2>Tips</h2>
+
+<p>Here are some things that I&#8217;ve learned from printing after a few days or have picked up from elsewhere on the internet:</p>
+
+<ul>
+<li><strong>Always print with a skirt</strong> - in Slic3r, there is a &#8216;skirt&#8217; setting, this tells the printer to do some extruding around the print, before the actual print. This is important, because it gets filament flowing. I&#8217;ve been doing 3 loops, 5mm from the object, with a height of 1 layer.</li>
+<li><strong>Avoid bubbles when applying Kapton Tape</strong> - <a href="http://www.youtube.com/watch?v=A6y8St1q2LM">follow this video</a> when applying Kapton tape to your build platform. Any bubbles or irregularities on your build platform will show up in the first layer of your print and can have implications for the rest of your print.</li>
+<li><strong>Keep the build platform hot</strong> - One of my prints with ABS got messed up after it started warping: I opened a window and the bed cooled down from ~105° to ~85° which I thought would be alright. It wasn&#8217;t: the print warped and was ruined.</li>
+<li><strong>ABS can be sanded down</strong> - A little sanding with 220-600grit sandpaper can improve the surface of ABS and remove some of the <em>layeredness</em> of the print</li>
+<li><strong>Motors will run even if they shouldn&#8217;t</strong> - I don&#8217;t know if this is a Pronterface thing or my printer, but if you send motor commands, they will run, even if the build platform is at one of its ends. I did this a few times, unplugged my printer and it seems to not have done any damage, but creates a concerning grinding noise.</li>
+<li><strong>Wait for prints to cool</strong> - This one&#8217;s tough to do, but trying to grab a print right after it&#8217;s finish is tough and I messed a print up trying to do this. Wait a few minutes for things to cool.</li>
+</ul>
+
+
+<h3>Resources</h3>
+
+<ul>
+<li><a href="http://www.thingiverse.com/">Thingiverse</a> - a nice library of 3D models</li>
+<li><a href="http://forums.reprap.org/">Reprap forums</a></li>
+<li><a href="http://www.reprap.org/wiki/Main_Page">Reprap Wiki</a></li>
+<li><a href="https://groups.google.com/forum/?fromgroups#!forum/makergear">MakerGear Google group</a></li>
+<li><a href="https://groups.google.com/forum/?fromgroups#!forum/makerbot">MakerBot Google group</a></li>
+</ul>
+
+
+<h2>Takeaways</h2>
+
+<ul>
+<li><p><strong>3D printing is not a consumer technology</strong><br /> I can&#8217;t see many of my friends or family members spending hundreds or thousands of dollars and hours of work to produce small plastic products of less than perfect quality. Amongst engineers, artists and tinkerers, however, 3D printing is an awesome technology! I would say 3D printing in its current state is for hobbyists or those with jobs that can utilize 3D printing.</p></li>
+<li><p><strong>3D printing <em>can</em> be a consumer technology</strong><br /> With some major hardware and software improvements as well as wider adoption to drive prices down, I can envision 3D printing being more of a consumer technology. Currently, there are quite a few steps and potential failure points to go from model to actual print - hopefully in the future this process will be streamlined. Improvements in print quality and speed should also help with consumer adoption.</p></li>
+<li><p><strong>3D printing is fun and interesting</strong> <br />I like building things, software especially. However, there is definitely something special about being able to create tangible items. After so much anticipation, I thought I might be let down when I actually received my printer. The opposite is true - I can&#8217;t stop thinking about printing: <em>what to print, how to improve my prints, new designs, etc&#8230;</em></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using a 1D Array as a 2D Array in C]]></title>
+    <link href="http://cmpolis.github.compost/using-a-1d-array-as-a-2d-array-in-c/"/>
+    <updated>2013-01-24T18:21:00-08:00</updated>
+    <id>http://cmpolis.github.compost/using-a-1d-array-as-a-2d-array-in-c</id>
+    <content type="html"><![CDATA[<p>Lately, I&#8217;ve been writing a lot of C code and using large multidimensional arrays. I&#8217;ve found that using a simple macro to map a 1D array to a 2(or more)D array has simplified my code and may make my code marginally faster.</p>
+
+<h3>Macro:</h3>
+
+<pre><code>#define DATA(r, c) (data[(r)*width + (c)])
+</code></pre>
+
+<h3>Accessing the array:</h3>
+
+<pre><code>DATA(rowNdx, colNdx) = x;
+</code></pre>
+
+<h3>Why</h3>
+
+<ul>
+<li>Only need to <code>malloc</code> and <code>free</code> once(<code>malloc(sizeof(char) * width * height)</code> instead of <code>malloc</code>ing for each row of the array</li>
+<li>Since the preprocessor handles the macro, there isn&#8217;t any extra overhead of function calls</li>
+<li>Array access is terse and it&#8217;s very clear what is going on - instead of <code>arr[x][y]</code>, you have <code>arr(x,y)</code></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Terminal Crash Course and Reference Sheet]]></title>
+    <link href="http://cmpolis.github.compost/the-terminal-crash-course-and-reference-sheet/"/>
+    <updated>2013-01-13T14:30:00-08:00</updated>
+    <id>http://cmpolis.github.compost/the-terminal-crash-course-and-reference-sheet</id>
+    <content type="html"><![CDATA[<p>I have been using linux for five or six years and I&#8217;m wrapping up my last year of college. I noticed that a lot of first year students and people starting to use linux have trouble getting around the terminal. Most of the time I&#8217;m only using a handful of commands and operations. I thought it might be helpful to share some basic usage of these commands and other tricks, so I wrote a short guide and reference sheet that I wish someone had given me when I started using linux: <em>I&#8217;m using Ubuntu and Bash 4.2.8, YMMV</em></p>
+
+<h2>Basics</h2>
+
+<h3>Directories:</h3>
+
+<p><code>.</code> Current directory</p>
+
+<p><code>..</code> Parent directory</p>
+
+<p><code>-</code> Directory that you were at last
+<em>ex:</em></p>
+
+<pre><code>$ cd ~/Downloads
+$ cd ~/Documents
+$ cd -
+[now you are back in Downloads]
+</code></pre>
+
+<p><code>~</code> Home directory, contains personal files, <em>equivalent to <code>/home/[your username]/</code></em></p>
+
+<p><code>/</code> Root directory, the parent directory for all files</p>
+
+<h3>Commands</h3>
+
+<h4>Navigation</h4>
+
+<p><code>cd</code> Choose Directory - move to a given directory <br />
+<em>ex:</em> <code>$ cd ~/Desktop</code></p>
+
+<p><code>ls</code> List files in the current directory <br />
+<em>Options: <br />
+<code>-a</code> list all files (some files are hidden otherwise) <br />
+<code>-l</code> list files with metadata like permissions, timestamp and size</em></p>
+
+<p><code>pwd</code> Prints the absolute path of the directory thta you are in</p>
+
+<p><code>mkdir [new dir name]</code> Creates a new directory with a relative or absolute path<br />
+<em>ex:</em></p>
+
+<pre><code>$ mkdir newDirA # creates a directory as a child of the current directory
+$ mkdir ~/Desktop/newDirB # creates a new directory on the desktop
+</code></pre>
+
+<h4>System Management</h4>
+
+<p><code>ps</code> Lists processes, <code>ps aux</code> prints all processes that the current user can see and should be used in most cases</p>
+
+<p><code>top</code> Shows system(CPU, mem, processes) status dynamically. Hit <code>q</code> key to exit.</p>
+
+<p><code>kill</code> Sends a signal to a process, usually to terminate it. Takes in a pid(can be obtained from <code>ps</code>) as an argument.</p>
+
+<p><code>free</code> Lists memory usage stats <code>-m</code> displays numbers in Mb and can be easier to read</p>
+
+<p><code>df</code> Lists hard disk usage stats (also takes <code>-m</code> option)</p>
+
+<h4>Files</h4>
+
+<p><code>cat</code> Print out a file in the terminal</p>
+
+<p><code>rm</code> Removes a file<br />
+<em>Options: <br />
+<code>-r</code> Recursivly remove files (use for directories)<br />
+<code>-f</code> Force removing files, ie the user isn&#8217;t prompted and a warning isnt given if the file does not exist<br />
+BE CAREFUL WITH RM, especially -with <code>-r</code> and <code>-f</code>!</em></p>
+
+<p><code>mv [file] [destination]</code> Moves a file</p>
+
+<p><code>cp [file] [destination]</code> Copies a file</p>
+
+<p><code>ln</code> Make a link(alias) to a file - you can open/read/edit the file using the link <br />
+<em>ex:</em> <code>$ ln ~/Downloads/someFile</code> creates a link to this file in the current directory.</p>
+
+<p><code>chmod [permission] [file]</code> Change file permissions/mode. <a href="http://en.wikipedia.org/wiki/Chmod">More info</a><br />
+<em>There are many different possible permissions, here are some useful ones:</em><br /></p>
+
+<pre><code>chmod 777 [file] # All users can read/write/execute
+chmod 755 [file] # All can read and execute, only owner can write
+chmod a+x [file] # Make a file executable
+</code></pre>
+
+<p><code>tail</code> Prints the last 10 or <code>-#</code> # of lines of a file</p>
+
+<p><code>head</code> Prints the first 10 or <code>-#</code> # of lines of a file</p>
+
+<p><code>diff</code> Show differences between two files <br />
+<em>ex:</em></p>
+
+<pre><code>$ cat a
+foo bar
+$ cat b
+foo
+$ diff a b
+1c1
+&lt; foo bar
+---
+&gt; foo
+</code></pre>
+
+<p><code>emacs/vim/nano</code> Text editors. I personally like VIM, but everyone has their preference and VIM has a decent learning curve.</p>
+
+<h4>Misc</h4>
+
+<p><code>man [command name]</code> <strong>IMPORTANT</strong> Shows the manual page for a given command</p>
+
+<p><code>grep [pattern] [filename]</code> Searches a file for a regex or text pattern</p>
+
+<p><code>time [command]</code> Runs a command and displays the time it takes to execute</p>
+
+<p><code>history</code> Prints previously run commands</p>
+
+<p><code>wget [URL]</code> Downloads the file at the given URL</p>
+
+<h2>Complicating Things&#8230;</h2>
+
+<h4>Shortcuts</h4>
+
+<p><code>up/down arrow keys</code> Toggle through previously run terminal commands</p>
+
+<p><code>ctrl+c</code> Attempts to shutdown the process that is running in the terminal (sends a SIGINT)</p>
+
+<p><code>ctrl+z</code> Brings the process that is running in the terminal to the background(sends a SIGSTOP), can be brought back to foreground with <code>fg</code></p>
+
+<p><code>tab</code> Autocompletes a file or command name in the terminal. Will only fully autocomplete if there is one option or will complete partially if all possibilities share part of their name. <br />
+<em>ex: <code>$ cd ~/Down [hit tab]</code> -> <code>$ cd/Downloads</code></em></p>
+
+<p><code>hit tab twice</code> Shows options to finish command or filename<br />
+<em>ex:</em></p>
+
+<pre><code>$ cd  ~/D [hit tab twice]
+Desktop/   Documents/ Downloads/ Dropbox/ 
+$ cd ~/D 
+</code></pre>
+
+<h4>Combining terminal commands</h4>
+
+<p><code>[command one] &amp;&amp; [command two]</code> Run command one, then run command two<br />
+<em>ex: <code>mkdir newDir &amp;&amp; cd newDir</code> to make a directory and navigate into it</em></p>
+
+<p><code>[command one] | [command two]</code> Pipe: Use the output from command one as input for command two<br />
+<em>ex: <code>history | grep git</code> to search history for when git commands were run</em></p>
+
+<h4>Redirection</h4>
+
+<p><code>[command] &gt; [file]</code> Redirect out: Instead of printing to the terminal, put the output in a file</p>
+
+<p><code>[command] &lt; [file]</code> Redirect in: Get input from a file instead of the terminal</p>
+
+<h4>Bang!</h4>
+
+<p><code>!!</code> Run the last command that was executed</p>
+
+<p><code>!#</code> Runs the command with a given line # that can be found from <code>history</code><br />
+<em>ex:</em></p>
+
+<pre><code>$ history | grep git
+1735  git status
+1736  git add .
+$ !1735  # Runs 'git status'
+</code></pre>
+
+<p><code>![pattern]</code> Run the last command you executed that started with &#8216;pattern&#8217;</p>
+
+<p><em>I hope this helps!</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Resolutions and Search Trends]]></title>
+    <link href="http://cmpolis.github.compost/resolutions-and-search-trends/"/>
+    <updated>2013-01-01T15:26:00-08:00</updated>
+    <id>http://cmpolis.github.compost/resolutions-and-search-trends</id>
+    <content type="html"><![CDATA[<p>Every new year, people make resolutions to better themselves. It&#8217;s great that people use the holiday as a catalyst, but it seems like most resolutions are not very long lived, <em>e.g. the gym is always more crowded in Jan than June.</em></p>
+
+<p>I thought it would be interesting to see this phenomenon in a less anecdotal light. I started messing with <a href="http://www.google.com/trends/">Google Trends</a> and found the data to be as I suspected: huge spikes for most <em>new-years-resolutiony</em> terms. It was also interesting to see how similar the trends were for some terms were year over year.</p>
+
+<p>I also compared the search traffic for each term in January with the year round search traffic for that term. The term that I found with the largest <em>Jan vs rest of year</em> average traffic difference was <strong>&#8216;get organized&#8217;</strong> with 1.52 times more search traffic in January.</p>
+
+<p>I graphed the search trends of some <em>new-years-resolutiony</em> terms with <a href="http://d3js.org/">d3.js</a>:</p>
+
+<p><em>Mouseover a label to highlight a specific term</em></p>
+
+<div id="labels"></div>
+
+
+<div id="graph"></div>
+
+
+<p><small>
+<a href="https://docs.google.com/spreadsheet/pub?key=0AjB3CQ60Cfb4dHFhVGtXRmV0anB6R1o1TURJYTM2RlE&amp;output=html">Raw data</a>, collected via <a href="http://www.google.com/trends/">Google Trends</a>.
+</small></p>
+
+<p><em>All the best in 2013!</em></p>
+
+<script src="http://d3js.org/d3.v3.js"></script>
+
+
+<script>
+var margin = {top: 20, right: 80, bottom: 30, left: 50},
+    width = 720 - margin.left;// - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var parseDate = d3.time.format("%x").parse;
+
+var x = d3.time.scale()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = d3.scale.category10();
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .ticks(d3.time.years, 1)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.line()
+    .interpolate("basis")
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.temperature); });
+
+var svg = d3.select("#graph").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("/resolution_graph_data.csv", function(error, data) {
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "Week"; }));
+
+  data.forEach(function(d) {
+    d.date = parseDate(d.Week);
+  });
+
+  window.cities = color.domain().map(function(name, ndx) {
+    return {
+      name: name,
+      values: data.map(function(d) {
+        return {date: d.date, temperature: +d[name]};
+      }),
+      color: color(ndx)
+    };
+  });
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+  y.domain([
+    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+  ]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis.tickSize(-height,0,0));
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+   // .append("text")
+   //   .attr("transform", "rotate(-90)")
+   //   .attr("y", 6)
+   //   .attr("dy", ".71em")
+   //   .style("text-anchor", "end")
+   //   .text("Temperature (ºF)");
+
+  var city = svg.selectAll(".city")
+      .data(cities)
+    .enter().append("g")
+      .attr("class", "city");
+
+  city.append("path")
+      .attr("class", "line")
+      .attr("id", function(d) { return d.name.replace(/\s/g,''); })
+      .attr("d", function(d) { return line(d.values); })
+      .style("stroke", function(d) { return color(d.name); });
+
+  //city.append("text")
+  //    .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+  //    .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+  //    .attr("x", 3)
+  //    .attr("dy", ".35em")
+  //    .text(function(d) { return d.name; });
+var labels = d3.select("#labels").append('ul')
+             .selectAll('li').data(cities).enter()
+             .append('li')
+             .attr('class', 'color-label')
+             .text(function(d) { return d.name; })
+             .style('color', function(d) { return d.color; })
+             .on('mouseover', function(d) { 
+               d3.select('#'+d.name.replace(/\s/g,''))
+                 .style('stroke-opacity', '1');
+             })
+             .on('mouseout', function(d) { 
+               d3.select('#'+d.name.replace(/\s/g,''))
+                 .style('stroke-opacity', '.15');
+             });
+              
+});
+</script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Obligatory First Post]]></title>
+    <link href="http://cmpolis.github.compost/obligatory-first-post/"/>
+    <updated>2012-12-30T22:09:00-08:00</updated>
+    <id>http://cmpolis.github.compost/obligatory-first-post</id>
+    <content type="html"><![CDATA[<p>After a hiatus of about a year, I&#8217;ve decided to blog again! I&#8217;m not one for making resolutions, but in 2013 and beyond, I plan to write more and do more open source coding. I blogged previously on ByteMuse.com and had a handful of posts, but I&#8217;m hoping to start posting more regularly.</p>
+
+<p>Some topics that I want to cover are:</p>
+
+<ul>
+<li>Open Source</li>
+<li>Web Development</li>
+<li>Mobile Development</li>
+<li>Databases</li>
+<li>Travel</li>
+<li>Books, Music, Movies</li>
+</ul>
+
+
+<h3>Old Posts</h3>
+
+<p>I&#8217;ve decided not to migrate my old posts for various reasons. Many of these posts are complemented with code that is still available on my <a href="http://github.com/cmpolis">GitHub Account</a>.</p>
+
+<h3>Setup</h3>
+
+<p><em>If you&#8217;re into web development, you might find this interesting&#8230;</em></p>
+
+<p>I previously ran my blog with WordPress and hated it: the templating and plugin system are really heavy, it favors editing and customization through UI instead of code&#8230; and it&#8217;s written in PHP.</p>
+
+<p>My new blog is powered by <a href="http://octopress.org">Octopress</a> and so far it has been great! Octopress is a ruby based static site generator that uses a simple templating system. I am using markdown for blog posts, HAML and HTML for static pages and SASS for styling. For comments, I am using Disqus since it can be added with a simple embed.</p>
+
+<p>To deploy, I simply run a rake command to generate my site as static content and assets, then push it to GitHub. I don&#8217;t have to worry about databases, bandwidth or management. Easy.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      ByteMuse
+      
+      - Using a 1D Array as a 2D Array in C
+      
+    </title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/app.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript'>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23674172-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id='container'>
+      <header>
+        <h1>
+          <a href='/'>ByteMuse</a>
+          <small>
+            The Code and Musings of
+            <a href='http://twitter.com/chrispolis'>@ChrisPolis</a>
+          </small>
+        </h1>
+        <nav>
+          <a href='/'>Posts</a>
+          <a href='/projects.html'>Projects</a>
+          <a href='/about.html'>About</a>
+          <a href='/contact.html'>Contact</a>
+        </nav>
+      </header>
+      <div id='content'>
+        <a href='https://plus.google.com/117393114751838266156' rel='author'></a>
+<article class='hentry' role='article'>
+  <h1 class='entry-title post-title'>
+    Using a 1D Array as a 2D Array in C
+  </h1>
+  <span class='date updated post-time'>
+    
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-24T18:21:00-08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2013</time>
+  </span>
+  <span class='spacer'>
+    -
+  </span>
+  <span class='post-author vcard author'>
+    <span class='fn'>Chris Polis</span>
+  </span>
+  <div class='entry-content post-content'>
+    <p>Lately, I&#8217;ve been writing a lot of C code and using large multidimensional arrays. I&#8217;ve found that using a simple macro to map a 1D array to a 2(or more)D array has simplified my code and may make my code marginally faster.</p>
+
+<h3>Macro:</h3>
+
+<pre><code>#define DATA(r, c) (data[(r)*width + (c)])
+</code></pre>
+
+<h3>Accessing the array:</h3>
+
+<pre><code>DATA(rowNdx, colNdx) = x;
+</code></pre>
+
+<h3>Why</h3>
+
+<ul>
+<li>Only need to <code>malloc</code> and <code>free</code> once(<code>malloc(sizeof(char) * width * height)</code> instead of <code>malloc</code>ing for each row of the array</li>
+<li>Since the preprocessor handles the macro, there isn&#8217;t any extra overhead of function calls</li>
+<li>Array access is terse and it&#8217;s very clear what is going on - instead of <code>arr[x][y]</code>, you have <code>arr(x,y)</code></li>
+</ul>
+
+
+  </div>
+  <div class='post-comments'>
+    <!-- %a(href="https://twitter.com/share" class="twitter-share-button" data-via="ChrisPolis")Tweet -->
+    <!-- %script -->
+    <!-- !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); -->
+    <!-- %script(type="text/javascript") -->
+    <!-- var likeIt = '<iframe src="http://www.facebook.com/plugins/like.php?href='+document.URL+'" scrolling="no" layout="button_count" frameborder="0" style="border:none; width:450px; height:24px;"></iframe>'; -->
+    <!-- document.write(likeIt); -->
+    <!-- %iframe(src="//www.facebook.com/plugins/like.php?href="+window.URL+"&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=403919139668608" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true") -->
+    <div id='disqus_thread'></div>
+    <script type='text/javascript'>
+      <!-- * * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */ -->
+      var disqus_shortname = 'bytemuse'; // required: replace example with your forum shortname
+      <!-- * * * DON'T EDIT BELOW THIS LINE * * */ -->
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+    </noscript>
+  </div>
+</article>
+
+      </div>
+      <footer>
+        <p>
+          Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content by Chris Polis © 2012
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

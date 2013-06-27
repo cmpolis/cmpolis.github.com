@@ -1,0 +1,25 @@
+\---
+layout: default
+title: "Contact"
+comments: false
+sharing: false
+footer: false
+\---
+#contact
+  %h2 Contact
+  %p
+    EMail:
+    %a(href="mailto:cmpolis@gmail.com") cmpolis@gmail.com
+  %p 
+    Twitter:
+    %a(href='http://twitter.com/chrispolis') @ChrisPolis
+  %form(action="https://docs.google.com/spreadsheet/formResponse?formkey=dF9meTh0NGE4MGVTNTdJaGNXYWphVnc6MQ&amp;ifq" method="POST" id="ss-form")
+    %input(type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" placeholder="Name - Required")
+    %br
+    %input(type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" placeholder="EMail - Required")
+    %br
+    %textarea(name="entry.1.single" rows="8" class="ss-q-long" id="entry_1" placeholder="Inquiry")
+    %br
+    %input(type="hidden" name="pageNumber" value="0")
+    %input(type="hidden" name="backupCache" value="")
+    %input(type="submit" name="submit" value="Get in touch!")

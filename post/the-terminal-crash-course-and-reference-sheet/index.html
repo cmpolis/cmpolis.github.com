@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      ByteMuse
+      
+      - Terminal Crash Course and Reference Sheet
+      
+    </title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/app.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript'>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23674172-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id='container'>
+      <header>
+        <h1>
+          <a href='/'>ByteMuse</a>
+          <small>
+            The Code and Musings of
+            <a href='http://twitter.com/chrispolis'>@ChrisPolis</a>
+          </small>
+        </h1>
+        <nav>
+          <a href='/'>Posts</a>
+          <a href='/projects.html'>Projects</a>
+          <a href='/about.html'>About</a>
+          <a href='/contact.html'>Contact</a>
+        </nav>
+      </header>
+      <div id='content'>
+        <a href='https://plus.google.com/117393114751838266156' rel='author'></a>
+<article class='hentry' role='article'>
+  <h1 class='entry-title post-title'>
+    Terminal Crash Course and Reference Sheet
+  </h1>
+  <span class='date updated post-time'>
+    
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-13T14:30:00-08:00" pubdate data-updated="true">Jan 13<span>th</span>, 2013</time>
+  </span>
+  <span class='spacer'>
+    -
+  </span>
+  <span class='post-author vcard author'>
+    <span class='fn'>Chris Polis</span>
+  </span>
+  <div class='entry-content post-content'>
+    <p>I have been using linux for five or six years and I&#8217;m wrapping up my last year of college. I noticed that a lot of first year students and people starting to use linux have trouble getting around the terminal. Most of the time I&#8217;m only using a handful of commands and operations. I thought it might be helpful to share some basic usage of these commands and other tricks, so I wrote a short guide and reference sheet that I wish someone had given me when I started using linux: <em>I&#8217;m using Ubuntu and Bash 4.2.8, YMMV</em></p>
+
+<h2>Basics</h2>
+
+<h3>Directories:</h3>
+
+<p><code>.</code> Current directory</p>
+
+<p><code>..</code> Parent directory</p>
+
+<p><code>-</code> Directory that you were at last
+<em>ex:</em></p>
+
+<pre><code>$ cd ~/Downloads
+$ cd ~/Documents
+$ cd -
+[now you are back in Downloads]
+</code></pre>
+
+<p><code>~</code> Home directory, contains personal files, <em>equivalent to <code>/home/[your username]/</code></em></p>
+
+<p><code>/</code> Root directory, the parent directory for all files</p>
+
+<h3>Commands</h3>
+
+<h4>Navigation</h4>
+
+<p><code>cd</code> Choose Directory - move to a given directory <br />
+<em>ex:</em> <code>$ cd ~/Desktop</code></p>
+
+<p><code>ls</code> List files in the current directory <br />
+<em>Options: <br />
+<code>-a</code> list all files (some files are hidden otherwise) <br />
+<code>-l</code> list files with metadata like permissions, timestamp and size</em></p>
+
+<p><code>pwd</code> Prints the absolute path of the directory thta you are in</p>
+
+<p><code>mkdir [new dir name]</code> Creates a new directory with a relative or absolute path<br />
+<em>ex:</em></p>
+
+<pre><code>$ mkdir newDirA # creates a directory as a child of the current directory
+$ mkdir ~/Desktop/newDirB # creates a new directory on the desktop
+</code></pre>
+
+<h4>System Management</h4>
+
+<p><code>ps</code> Lists processes, <code>ps aux</code> prints all processes that the current user can see and should be used in most cases</p>
+
+<p><code>top</code> Shows system(CPU, mem, processes) status dynamically. Hit <code>q</code> key to exit.</p>
+
+<p><code>kill</code> Sends a signal to a process, usually to terminate it. Takes in a pid(can be obtained from <code>ps</code>) as an argument.</p>
+
+<p><code>free</code> Lists memory usage stats <code>-m</code> displays numbers in Mb and can be easier to read</p>
+
+<p><code>df</code> Lists hard disk usage stats (also takes <code>-m</code> option)</p>
+
+<h4>Files</h4>
+
+<p><code>cat</code> Print out a file in the terminal</p>
+
+<p><code>rm</code> Removes a file<br />
+<em>Options: <br />
+<code>-r</code> Recursivly remove files (use for directories)<br />
+<code>-f</code> Force removing files, ie the user isn&#8217;t prompted and a warning isnt given if the file does not exist<br />
+BE CAREFUL WITH RM, especially -with <code>-r</code> and <code>-f</code>!</em></p>
+
+<p><code>mv [file] [destination]</code> Moves a file</p>
+
+<p><code>cp [file] [destination]</code> Copies a file</p>
+
+<p><code>ln</code> Make a link(alias) to a file - you can open/read/edit the file using the link <br />
+<em>ex:</em> <code>$ ln ~/Downloads/someFile</code> creates a link to this file in the current directory.</p>
+
+<p><code>chmod [permission] [file]</code> Change file permissions/mode. <a href="http://en.wikipedia.org/wiki/Chmod">More info</a><br />
+<em>There are many different possible permissions, here are some useful ones:</em><br /></p>
+
+<pre><code>chmod 777 [file] # All users can read/write/execute
+chmod 755 [file] # All can read and execute, only owner can write
+chmod a+x [file] # Make a file executable
+</code></pre>
+
+<p><code>tail</code> Prints the last 10 or <code>-#</code> # of lines of a file</p>
+
+<p><code>head</code> Prints the first 10 or <code>-#</code> # of lines of a file</p>
+
+<p><code>diff</code> Show differences between two files <br />
+<em>ex:</em></p>
+
+<pre><code>$ cat a
+foo bar
+$ cat b
+foo
+$ diff a b
+1c1
+&lt; foo bar
+---
+&gt; foo
+</code></pre>
+
+<p><code>emacs/vim/nano</code> Text editors. I personally like VIM, but everyone has their preference and VIM has a decent learning curve.</p>
+
+<h4>Misc</h4>
+
+<p><code>man [command name]</code> <strong>IMPORTANT</strong> Shows the manual page for a given command</p>
+
+<p><code>grep [pattern] [filename]</code> Searches a file for a regex or text pattern</p>
+
+<p><code>time [command]</code> Runs a command and displays the time it takes to execute</p>
+
+<p><code>history</code> Prints previously run commands</p>
+
+<p><code>wget [URL]</code> Downloads the file at the given URL</p>
+
+<h2>Complicating Things&#8230;</h2>
+
+<h4>Shortcuts</h4>
+
+<p><code>up/down arrow keys</code> Toggle through previously run terminal commands</p>
+
+<p><code>ctrl+c</code> Attempts to shutdown the process that is running in the terminal (sends a SIGINT)</p>
+
+<p><code>ctrl+z</code> Brings the process that is running in the terminal to the background(sends a SIGSTOP), can be brought back to foreground with <code>fg</code></p>
+
+<p><code>tab</code> Autocompletes a file or command name in the terminal. Will only fully autocomplete if there is one option or will complete partially if all possibilities share part of their name. <br />
+<em>ex: <code>$ cd ~/Down [hit tab]</code> -> <code>$ cd/Downloads</code></em></p>
+
+<p><code>hit tab twice</code> Shows options to finish command or filename<br />
+<em>ex:</em></p>
+
+<pre><code>$ cd  ~/D [hit tab twice]
+Desktop/   Documents/ Downloads/ Dropbox/ 
+$ cd ~/D 
+</code></pre>
+
+<h4>Combining terminal commands</h4>
+
+<p><code>[command one] &amp;&amp; [command two]</code> Run command one, then run command two<br />
+<em>ex: <code>mkdir newDir &amp;&amp; cd newDir</code> to make a directory and navigate into it</em></p>
+
+<p><code>[command one] | [command two]</code> Pipe: Use the output from command one as input for command two<br />
+<em>ex: <code>history | grep git</code> to search history for when git commands were run</em></p>
+
+<h4>Redirection</h4>
+
+<p><code>[command] &gt; [file]</code> Redirect out: Instead of printing to the terminal, put the output in a file</p>
+
+<p><code>[command] &lt; [file]</code> Redirect in: Get input from a file instead of the terminal</p>
+
+<h4>Bang!</h4>
+
+<p><code>!!</code> Run the last command that was executed</p>
+
+<p><code>!#</code> Runs the command with a given line # that can be found from <code>history</code><br />
+<em>ex:</em></p>
+
+<pre><code>$ history | grep git
+1735  git status
+1736  git add .
+$ !1735  # Runs 'git status'
+</code></pre>
+
+<p><code>![pattern]</code> Run the last command you executed that started with &#8216;pattern&#8217;</p>
+
+<p><em>I hope this helps!</em></p>
+
+  </div>
+  <div class='post-comments'>
+    <!-- %a(href="https://twitter.com/share" class="twitter-share-button" data-via="ChrisPolis")Tweet -->
+    <!-- %script -->
+    <!-- !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); -->
+    <!-- %script(type="text/javascript") -->
+    <!-- var likeIt = '<iframe src="http://www.facebook.com/plugins/like.php?href='+document.URL+'" scrolling="no" layout="button_count" frameborder="0" style="border:none; width:450px; height:24px;"></iframe>'; -->
+    <!-- document.write(likeIt); -->
+    <!-- %iframe(src="//www.facebook.com/plugins/like.php?href="+window.URL+"&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=403919139668608" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true") -->
+    <div id='disqus_thread'></div>
+    <script type='text/javascript'>
+      <!-- * * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */ -->
+      var disqus_shortname = 'bytemuse'; // required: replace example with your forum shortname
+      <!-- * * * DON'T EDIT BELOW THIS LINE * * */ -->
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+    </noscript>
+  </div>
+</article>
+
+      </div>
+      <footer>
+        <p>
+          Powered by <a href='http://octopress.org/'>Octopress</a>, hosted on <a href='http://github.com'>Github</a>, design and content by Chris Polis © 2012
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
