@@ -2,48 +2,52 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://cmpolis.github.compost/obligatory-first-post/</loc>
-        <lastmod>2013-02-05T11:07:27-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.compost/resolutions-and-search-trends/</loc>
-        <lastmod>2013-02-05T11:07:27-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.compost/the-terminal-crash-course-and-reference-sheet/</loc>
-        <lastmod>2013-02-05T11:07:27-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.compost/using-a-1d-array-as-a-2d-array-in-c/</loc>
-        <lastmod>2013-02-05T11:07:27-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.compost/3-days-with-a-3d-printer/</loc>
-        <lastmod>2013-02-08T16:26:13-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://cmpolis.github.compost/a-straightforward-cloud-computing-price-comparison/
         </loc>
-        <lastmod>2013-06-27T00:17:02-07:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cmpolis.github.compost/easy-scrolling-pages-with-scrollit-dot-js/</loc>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.com/about.html</loc>
-        <lastmod>2013-01-13T22:46:01-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.com/blog/archives/</loc>
-        <lastmod>2013-06-27T00:17:02-07:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.com/contact.html</loc>
-        <lastmod>2013-01-13T22:46:01-08:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.com/</loc>
-        <lastmod>2013-06-27T00:17:02-07:00</lastmod>
+        <lastmod>2013-07-08T22:22:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://cmpolis.github.com/projects.html</loc>
-        <lastmod>2013-01-13T22:46:01-08:00</lastmod>
+        <lastmod>2013-07-08T22:26:02-07:00</lastmod>
     </url>
 </urlset>

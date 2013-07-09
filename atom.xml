@@ -4,7 +4,7 @@
   <title><![CDATA[ByteMuse]]></title>
   <link href="http://cmpolis.github.com/atom.xml" rel="self"/>
   <link href="http://cmpolis.github.com/"/>
-  <updated>2013-06-27T00:17:16-07:00</updated>
+  <updated>2013-07-08T22:26:02-07:00</updated>
   <id>http://cmpolis.github.com/</id>
   <author>
     <name><![CDATA[Chris Polis]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Easy Scrolling Pages with scrollIt.js]]></title>
+    <link href="http://cmpolis.github.compost/easy-scrolling-pages-with-scrollit-dot-js/"/>
+    <updated>2013-07-07T14:25:00-07:00</updated>
+    <id>http://cmpolis.github.compost/easy-scrolling-pages-with-scrollit-dot-js</id>
+    <content type="html"><![CDATA[<p>One web UI trend that has been growing in popularity recently is to display content on long scrolling pages (as opposed to using tabs or paginating content). I love going through UIs that scroll, <a href='http://rdio.com'>Rdio</a> comes to mind as a good example. I&#8217;ve also seen a lot of newer landing pages that are laid out with vertical scrolling.</p>
+
+<h4>I &hearts; this trend; it allows for a much better user experience:</h4>
+
+<p><strong>Content can be teased</strong><br />
+With content layed out vertically and depending on heights, you will probably be able to tease the next section and keep the user engaged.</p>
+
+<p class='center'><img src="http://bytemuse.com/images/scrollvstab.png" width="540" height="321" title="Scrolling vs Tabs" ></p>
+
+
+<p><strong>Scrolling is much easier than clicking</strong><br />
+I find it much easier to scroll<em>(especially since I&#8217;m almost always on a laptop with multi touch scrolling or a mouse with a scroll wheel)</em>. Making the page easier to navigate should get users to expose more content.</p>
+
+<p><strong>No additional page loads</strong><br />
+Again, this kind of layout reduces friction for users to view content. Making a user wait for a page to load is unnecessary and inconvenient - just load everything at once when it makes sense. Bundling content is also likely to save server resources by reducing the number of requests, reloading assets, etc&#8230;</p>
+
+<hr />
+
+
+<h2>The plugin - scrollIt.js</h2>
+
+<p>I&#8217;ve built a few sites with this layout. I have a general rule to not rewrite the same functionality three times - abstract it out and DRY it up. I wrote a jQuery plugin to use for future projects like this. It&#8217;s really simple to use, lightweight, configurable and is open source!</p>
+
+<p>It&#8217;s as easy as putting <code>data-</code> attributes on DIVs and calling <code>$.scrollIt();</code></p>
+
+<p><a href='https://github.com/cmpolis/scrollIt.js'><h1 class='center'>Get scrollIt.js on Github!</h1></a>
+<a href='http://bytemuse.com/scrollIt.js'><h1 class='center'>Demo</h1></a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Straightforward Cloud Computing Price Comparison]]></title>

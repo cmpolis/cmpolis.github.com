@@ -4,7 +4,7 @@
     <title>
       ByteMuse
       
-      - A Straightforward Cloud Computing Price Comparison
+      - Easy Scrolling Pages with scrollIt.js
       
     </title>
     <meta charset='utf-8' content='text/html' http-equiv='Content-Type'>
@@ -42,7 +42,7 @@
         <a href='https://plus.google.com/117393114751838266156' rel='author'></a>
 <article class='hentry' role='article'>
   <h1 class='entry-title post-title'>
-    A Straightforward Cloud Computing Price Comparison
+    Easy Scrolling Pages With scrollIt.js
   </h1>
   <span class='date updated post-time'>
     
@@ -57,7 +57,7 @@
   
 
 
-<time datetime="2013-06-26T23:21:00-07:00" pubdate data-updated="true">Jun 26<span>th</span>, 2013</time>
+<time datetime="2013-07-07T14:25:00-07:00" pubdate data-updated="true">Jul 7<span>th</span>, 2013</time>
   </span>
   <span class='spacer'>
     -
@@ -66,26 +66,33 @@
     <span class='fn'>Chris Polis</span>
   </span>
   <div class='entry-content post-content'>
-    <p><em>tl;dr: I made a sortable and filterable table of different cloud computing plans that adds transparency for comparing different plans and providers. <a href="http://CloudPriceGrid.com" title="Cloud Price Grid">Available here.</a></em></p>
+    <p>One web UI trend that has been growing in popularity recently is to display content on long scrolling pages (as opposed to using tabs or paginating content). I love going through UIs that scroll, <a href='http://rdio.com'>Rdio</a> comes to mind as a good example. I&#8217;ve also seen a lot of newer landing pages that are laid out with vertical scrolling.</p>
 
-<p>There are a plethora of cloud hosting providers out there these days. For most of my recent projects, I have gone with Amazon EC2 without considering other solutions. However, there are two newer services that I have been wanting to try out - Digital Ocean and Google Compute Engine.</p>
+<h4>I &hearts; this trend; it allows for a much better user experience:</h4>
 
-<p>I recently read about Digital Ocean and am enticed by their low prices as well as their advertised speed and ease of deployment. Google has recently launched their Compute Engine service, which directly competes with Amazon&#8217;s EC2.</p>
+<p><strong>Content can be teased</strong><br />
+With content layed out vertically and depending on heights, you will probably be able to tease the next section and keep the user engaged.</p>
 
-<p>After a bit of digging, I found there was no single place where I could compare all these services. Also, some providers<em>(eg. Amazon)</em> do not have a transparent pricing grid that covers their plans. What I wanted (and built) was a spreadsheet with all the plans from a few providers that contained basic plan information and could be sorted and filtered.</p>
-
-<p>Unfortunately, a lot of plan metrics are either subjective or cannot be collected without benchmarking; cpu power, connectivity and stability could not be put on the grid. However, RAM, storage and price are fairly objective and given by each provider. Computing power for each plan is listed, but it is hard to compare between providers. I included an aggregate column of RAM per $ per month to give an indication of relative pricing.</p>
-
-<p>Some quick observations:</p>
-
-<ul>
-<li>Amazon and Google have VERY comparable pricing.</li>
-<li>Joyent seems to be the least value (in terms of RAM/$/Month - maybe they have a value prop in another way)</li>
-<li>Digital Ocean has the best value (in terms of RAM/$/Month)</li>
-</ul>
+<p class='center'><img src="http://bytemuse.com/images/scrollvstab.png" width="540" height="321" title="Scrolling vs Tabs" ></p>
 
 
-<h3>Here it is: <a href="http://CloudPriceGrid.com" title="Cloud Price Grid">CloudPriceGrid.com</a></h3>
+<p><strong>Scrolling is much easier than clicking</strong><br />
+I find it much easier to scroll<em>(especially since I&#8217;m almost always on a laptop with multi touch scrolling or a mouse with a scroll wheel)</em>. Making the page easier to navigate should get users to expose more content.</p>
+
+<p><strong>No additional page loads</strong><br />
+Again, this kind of layout reduces friction for users to view content. Making a user wait for a page to load is unnecessary and inconvenient - just load everything at once when it makes sense. Bundling content is also likely to save server resources by reducing the number of requests, reloading assets, etc&#8230;</p>
+
+<hr />
+
+
+<h2>The plugin - scrollIt.js</h2>
+
+<p>I&#8217;ve built a few sites with this layout. I have a general rule to not rewrite the same functionality three times - abstract it out and DRY it up. I wrote a jQuery plugin to use for future projects like this. It&#8217;s really simple to use, lightweight, configurable and is open source!</p>
+
+<p>It&#8217;s as easy as putting <code>data-</code> attributes on DIVs and calling <code>$.scrollIt();</code></p>
+
+<p><a href='https://github.com/cmpolis/scrollIt.js'><h1 class='center'>Get scrollIt.js on Github!</h1></a>
+<a href='http://bytemuse.com/scrollIt.js'><h1 class='center'>Demo</h1></a></p>
 
   </div>
   <div class='post-comments'>
